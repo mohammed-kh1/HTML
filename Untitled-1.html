@@ -16,9 +16,31 @@
                 width: 33%;
                 display: inline-block;
             }
+            .class {
+                background-color: antiquewhite;
+                color: rgb(70, 70, 214);
+                border: 1px solid;
+                padding: auto;
+            }
         </style>
     </head>
     <body>
+        <form>
+            <h1>fill your information:</h1>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" style="margin: 10px;"><br>
+            <lable for="lname">Last Name:</lable>
+            <input type="text" id="lname" name="lname" style="margin: 10px;"><br>
+
+            <input type="button" value="submit" style="margin: 20px;">
+            
+            <h2>Choose prefered language</h2>
+            <lable for="lang">Arabic</lable>
+            <input type="radio" id="lang" name="lang">
+            <lable for="lang">English</lable>
+            <input type="radio" id="lang" name="lang">
+
+        </form>
         <h2>here is a table for intern students</h2>
         <table>
             <tr>
@@ -83,5 +105,9 @@
             <p>location: qatif.</p>
             <p>Martial: single.</p>
         </div>
-        
+
+        <div class="class">
+            <h3>all trainees <span style="color: red;">must</span> complete the 16 weeks.</h3>
+        </div>
+
     </body>
