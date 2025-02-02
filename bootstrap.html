@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: large;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="display-3">Kwaidi</h1>
+    <div class="p-3 display-6 text-primary-emphasis border border-primary-subtle rounded-3">
+        Our products:
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-Primary dropdown-toggle" type="button" id="dropdownButton" data-bs-toggle="dropdown">
+          Item lists
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+          <li><a class="dropdown-item" href="#">Electronics</a></li>
+          <li><a class="dropdown-item" href="#">Batteries</a></li>
+          <li><a class="dropdown-item" href="#">clothes</a></li>
+          <li><a class="dropdown-item" href="#">devices</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion" id="AnExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#FirstCollapse" aria-expanded="true" aria-controls="FirstCollapse">
+                    Subject 1.
+                </button>
+            </h2>
+            <div id="FirstCollapse" class="accordion-collapse collapse" data-bs-parent="#AnExample">
+                <div class="accordion-body">
+                    <strong>First accordion.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SecondCollapse" aria-expanded="true" aria-controls="#SecondCollapse">
+                    Subject 2.
+                </button>
+            </h2>
+            <div id="SecondCollapse" class="accordion-collapse collapse" data-bs-parent="#AnExample">
+                <div class="accordion-body">
+                    <strong>Second accordion.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ThirdCollapse" aria-expanded="true" aria-controls="ThirdCollapse">
+                    Subject 3.
+                </button>
+            </h2>
+            <div id="ThirdCollapse" class="accordion-collapse collapse show" data-bs-parent="#AnExample">
+                <div class="accordion-body">
+                    <strong> Third accordion.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-group">
+        <p> <strong>Select your reigon:</strong></p>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="RegionList" id="FirstRegion" checked>
+            <label class="form-check-lable" for="FirstRegion"> Middle region</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="RegionList" id="SecondRegion" checked>
+            <label class="form-check-lable" for="SecondRegion"> Eastern region</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="RegionList" id="ThirdRegion" checked>
+            <label class="form-check-lable" for="ThirdRegion"> Western region</label>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Basic Subscription</h5><br>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Price: 15$/month</h6>
+                  <p class="card-text">Some features in this catagory.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Pro Subscription</h5><br>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Price: 25$/month</h6>
+                  <p class="card-text">More features in this catagory.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Premium Subscription</h5><br>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Price: 30.99$/month</h6>
+                  <p class="card-text">All features in this catagory.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
